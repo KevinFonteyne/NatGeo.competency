@@ -1,0 +1,62 @@
+table{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+td,th{
+    background-color: solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border:1px solid black;
+}
+th{
+    background-color: rgb(185, 184, 184);
+}
+.fail{
+    color: rgb(153, 4, 4);
+    background-color: rgba(216, 49, 8, 0.466);
+}
+.highlight{
+    background-color: rgba(255, 255, 0, 0.603);
+    font-weight: 700;
+}
+body td.hover{
+    background-color: yellow;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #dedede;
+    height: 500px;
+}
+.flex-child{
+    flex-basis: 100px;
+    margin-top: 10px;
+    background-color: green;
+    color: lawngreen;
+    border: 1px solid lawngreen;
+    height: 50px;
+}
+/*grid8*/
+
+.grid-container{
+    display: grid;
+
+    height: 300px;
+}
+.grid-child{
+    background-color: gray;
+    border: 1px solid black;
+}
+/*mobile first*/
+body{
+    background-color: #ffeea1;
+}
+@media(min-width: 768px){
+    body{
+        background-color: red;
+    }
+}
